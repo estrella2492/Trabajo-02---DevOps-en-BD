@@ -214,9 +214,22 @@ Al ser un modelo iterativo es importante estar siempre en este constante proceso
 
 \subsection{\textbf{DevOps en Base de Datos}}
 
-\subsubsection{\textbf{B.1}}
+\subsubsection{\textbf{¿Qué es la base de datos DevOps?}}
 
-EDITAR
+Los cambios en la base de datos son a menudo una fuente importante de riesgo y retraso cuando realizar implementaciones se trata ... integrar el trabajo de la base de datos en el proceso de entrega de software contribuyó positivamente a la entrega continua ...una buena comunicación y la gestión integral de la configuración que incluye la base de datos es importante. Los equipos que funcionan bien en la entrega continua almacenan cambios en la base de datos como scripts en el control de versiones y gestionan estos cambios de la misma manera que los cambios en la aplicación de producción ... cuando los cambios en la aplicación requieren cambios en la base de datos, estos equipos los discuten con las personas responsables de la base de datos de producción y se aseguran de que el equipo de ingeniería tenga visibilidad del progreso de los cambios pendientes en la base de datos.Cuando los equipos siguen estas prácticas, los cambios en la base de datos no los ralentizan ni causan problemas cuando realizan implementaciones de código. \cite{DevopsBD}
+
+\subsubsection{\textbf{Incluyendo la base de datos en DevOps}}
+
+DevOps se trata de cambiar la cultura del desarrollo de software y mejorar la colaboración entre los equipos de desarrollo y operaciones. Pero también se trata de automatizar muchos de los trabajos comunes en la entrega de software, como el control de origen, las pruebas, el cumplimiento y las comprobaciones de seguridad y las implementaciones. Con la automatización establecida, se establece un proceso que ahora es común en el desarrollo de aplicaciones: el desarrollo progresa desde el control de origen a través de la integración continua hasta la gestión de versiones antes de que se implementen los cambios. En cada etapa, los cambios se verifican y prueban para que los errores se recojan antes en el ciclo y las versiones de software sean más rápidas y confiables. Sin embargo, las bases de datos son más problemáticas porque los datos críticos del negocio deben preservarse de manera segura y correcta. Además de esto, existen desafíos específicos en los servicios financieros, como sistemas extremadamente complejos, bases de datos heredadas y departamentos aislados. Sin embargo, ahora se han introducido herramientas y procesos que permiten que las bases de datos se desarrollen junto con las aplicaciones al conectarse e integrarse con los sistemas y la infraestructura ya existentes: \cite{DevopsBD2}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=14cm]{./IMAGENES/basededatos_1} 
+		\caption{Incluyendo la base de datos en DevOps}
+	\end{center}
+\end{figure}
+
+Como se puede ver, en lugar de que el desarrollo de la base de datos esté separado del de la aplicación y sea administrado al final por un equipo aislado, se convierte en una parte integral y natural de todo el proceso de desarrollo. Esta es una ventaja real para las empresas e instituciones donde, por lo general, la base de datos ha sido un cuello de botella. Debido a que la aplicación y la base de datos se desarrollan y prueban juntas, los errores o problemas potenciales se resaltan mucho antes en el proceso de desarrollo, evitando problemas cuando se implementan cambios. Compare esto con las conversaciones que he tenido con muchos DBA que deben revisar miles de líneas de script cuando se trata de implementar cambios en la base de datos. Eso puede llevar días, dependiendo de cuántos errores encuentren en el script. Al enviar cambios de la base de datos al control de origen de manera regular, puede introducir compilaciones y pruebas automatizadas para asegurarse de que todas esas pequeñas unidades de cambio se prueben y validen varias veces antes de que esté listo para implementar en su próximo entorno. Esto hace que las versiones sean más confiables y consuman menos tiempo, y también significa que puede responder a los cambios mucho más rápido. \cite{DevopsBD2}
 
 
 %% ----------------------------------------------------------------------------------------------------------------------------------
