@@ -18,7 +18,7 @@
 		\title{\huge DevOps en Base de Datos}
 		
 		\author{Estrella Palacios, Katherine Lizbeth              	(2016056193))}
-		\author{Gonzales Cave, Angel Gabriel              	(xxxxxxxxxx))} %%cambiar
+		\author{Gonzales Cave, Angel Gabriel              	(2017057861))}
 		\author{Huichi Contreras, Franklin Carlos         	(2016054948))} 
 		\author{Huillca Umpiri, Willian Arturo             		(xxxxxxxxxx))} %%cambiar 
 		\address{Escuela Profesional de Ingeniería de Sistemas}
@@ -231,7 +231,53 @@ DevOps se trata de cambiar la cultura del desarrollo de software y mejorar la co
 
 Como se puede ver, en lugar de que el desarrollo de la base de datos esté separado del de la aplicación y sea administrado al final por un equipo aislado, se convierte en una parte integral y natural de todo el proceso de desarrollo. Esta es una ventaja real para las empresas e instituciones donde, por lo general, la base de datos ha sido un cuello de botella. Debido a que la aplicación y la base de datos se desarrollan y prueban juntas, los errores o problemas potenciales se resaltan mucho antes en el proceso de desarrollo, evitando problemas cuando se implementan cambios. Compare esto con las conversaciones que he tenido con muchos DBA que deben revisar miles de líneas de script cuando se trata de implementar cambios en la base de datos. Eso puede llevar días, dependiendo de cuántos errores encuentren en el script. Al enviar cambios de la base de datos al control de origen de manera regular, puede introducir compilaciones y pruebas automatizadas para asegurarse de que todas esas pequeñas unidades de cambio se prueben y validen varias veces antes de que esté listo para implementar en su próximo entorno. Esto hace que las versiones sean más confiables y consuman menos tiempo, y también significa que puede responder a los cambios mucho más rápido. \cite{DevopsBD2}
 
+%% TERCERA SUBSECCION
+\subsection{\textbf{Inclusión de la base de datos en la canalización de implementación con la de las aplicaciones}}
 
+\subsubsection{\textbf{Deployment pipeline}}
+
+Tanto las bases de datos y las aplicaciones deberían compartir un solo ciclo de vida de desarrollo; coexistir en la misma tubería de implementación. Existe una situación por la cual esto no se aplica en la mayoría de los casos ya que revertir una base de datos es más riesgoso que revertir una aplicación. Al no incluir la base de datos en la tubería, la mayor parte del trabajo relacionado con los cambios en la base de datos termina siendo manual, con los costos y riesgos asociados. Además de eso esto :
+\begin{itemize}
+
+\item  Resulta en una falta de trazabilidad de los cambios en la base de datos
+\item Evita aplicar las buenas prácticas de Integración Continua (CI) y Entrega Continua (CD) en toda su extensión
+\item Promueve el miedo a los cambios.
+
+\end{itemize}
+\subsubsection{\textbf{Fuente de Control}}
+
+El control de origen es la primera etapa de la canalización de implementación y proporciona las siguientes capacidades:
+\begin{itemize}
+
+\item Trazabilidad a través del historial de cambios
+\item SQL como documentación
+\item Código compartido y proceso compartido
+\item Estándares exigibles para reducir conflictos
+
+\end{itemize}
+
+\subsubsection{\textbf{Integración coninua y entrega continua}}
+Después de lograr el control de origen para los cambios en la base de datos, se desbloquean las etapas segunda y tercera de la tubería de implementación. Ahora podemos aplicar también las prácticas de CI y CD.
+
+
+\subsubsection{\textbf{ Integración continua}}
+
+Esto es cuando los cambios en la base de datos se integran y validan mediante pruebas:
+\begin{itemize}
+\item ¿Qué se debe probar? (unidad, integración)
+\item ¿Cuándo deberían ser probados? (antes, durante y después de la implementación)
+\item Una vez más, al usar lotes pequeños, el riesgo asociado con los cambios se reduce considerablemente.
+\end{itemize}
+
+
+\subsubsection{\textbf{Entrega continua}}
+
+Esta etapa se enfoca en entregar cambios en la base de datos en el entorno de destino. Métricas a tener en cuenta:
+\begin{itemize}
+\item Tiempo de inactividad de implementación
+\item Hora de recuperarse
+\item Aplicaciones afectadas
+\end{itemize}
 %% ----------------------------------------------------------------------------------------------------------------------------------
 
 
