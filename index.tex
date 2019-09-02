@@ -236,12 +236,12 @@ Como se puede ver, en lugar de que el desarrollo de la base de datos esté separ
 
 \subsubsection{\textbf{Deployment pipeline}}
 
-Tanto las bases de datos y las aplicaciones deberían compartir un solo ciclo de vida de desarrollo; coexistir en la misma tubería de implementación. Existe una situación por la cual esto no se aplica en la mayoría de los casos ya que revertir una base de datos es más riesgoso que revertir una aplicación. Al no incluir la base de datos en la tubería, la mayor parte del trabajo relacionado con los cambios en la base de datos termina siendo manual, con los costos y riesgos asociados. Además de eso esto :
+Tanto las bases de datos y las aplicaciones deberían compartir un solo ciclo de vida de desarrollo; coexistir en la misma tubería de implementación. Existe una situación por la cual esto no se aplica en la mayoría de los casos ya que revertir una base de datos es más riesgoso que revertir una aplicación. Al no incluir la base de datos en la tubería, la mayor parte del trabajo relacionado con los cambios en la base de datos termina siendo manual, con los costos y riesgos asociados. Además de eso esto : 
 \begin{itemize}
 
-\item  Resulta en una falta de trazabilidad de los cambios en la base de datos
+\item Resulta en una falta de trazabilidad de los cambios en la base de datos
 \item Evita aplicar las buenas prácticas de Integración Continua (CI) y Entrega Continua (CD) en toda su extensión
-\item Promueve el miedo a los cambios.
+\item Promueve el miedo a los cambios.\cite{CI/CD} 
 
 \end{itemize}
 \subsubsection{\textbf{Fuente de Control}}
@@ -252,7 +252,7 @@ El control de origen es la primera etapa de la canalización de implementación 
 \item Trazabilidad a través del historial de cambios
 \item SQL como documentación
 \item Código compartido y proceso compartido
-\item Estándares exigibles para reducir conflictos
+\item Estándares exigibles para reducir conflictos 
 
 \end{itemize}
 
@@ -266,7 +266,7 @@ Esto es cuando los cambios en la base de datos se integran y validan mediante pr
 \begin{itemize}
 \item ¿Qué se debe probar? (unidad, integración)
 \item ¿Cuándo deberían ser probados? (antes, durante y después de la implementación)
-\item Una vez más, al usar lotes pequeños, el riesgo asociado con los cambios se reduce considerablemente.
+\item Una vez más, al usar lotes pequeños, el riesgo asociado con los cambios se reduce considerablemente. 
 \end{itemize}
 
 
@@ -276,7 +276,7 @@ Esta etapa se enfoca en entregar cambios en la base de datos en el entorno de de
 \begin{itemize}
 \item Tiempo de inactividad de implementación
 \item Hora de recuperarse
-\item Aplicaciones afectadas
+\item Aplicaciones afectadas \cite{CI/CD} 
 \end{itemize}
 %% ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -287,6 +287,8 @@ Esta etapa se enfoca en entregar cambios en la base de datos en el entorno de de
 
 \subsection{\textbf{El manejo de versiones una ayuda para el DBA}}
 La automatización le hace la vida más fácil al DBA ya que cada vez que alguien realice una modificación el poder ver quien lo hizo, como lo hizo, porque lo hizo y con ello podrá gestionar de manera ágil la base de datos. Tomando en cuenta el manejo de versiones pasarían a ser de ayuda para el DBA tornándose confiables, y volátiles al cambio, siendo mucho más rápido que el estar conversando e indagando con los desarrolladores por el cambio realizado.
+\subsection{\textbf{DevOps como modelo de trabajo}}
+DevOps es un modelo de trabajo para realizar entregas seguras que nos darán la seguridad que los avances de la aplicación están siendo continuamente integrados y trabajados en una misma línea desde de la creación de un repositorio para guardar los cambios de los scripts o de la aplicación hasta la monitorización de la aplicación.
 
 %% ----------------------------------------------------------------------------------------------------------------------------------
 
