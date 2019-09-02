@@ -118,43 +118,25 @@ DevOps maneja principios que son parte de la estructura colaborativa y son utili
 
 \begin{itemize}
 
-\item \textbf{Integración Continua}
-La Integración Continua es la forma en la que el equipo de desarrollo de software integra su trabajo parcial o total, en un determinado tiempo establecido por el equipo de trabajo. Requiere de herramientas de automatización que son únicas para todo el equipo de desarrolladores. Estas herramientas ayudan a integrar en forma continua partes de código que son validados por pruebas automáticas, lo cual vuelve más eficiente el trabajo del equipo de desarrollo, ya que permite detectar fallos en etapas tempranas del ciclo de desarrollo.
-La Integración continua de cada uno de los integrantes del equipo va a favorecer en los tiempos y calidad del producto.La automatización de la integración continua ayuda a descubrir errores, debido a las continuas pruebas de unidad automatizadas. 
+\item Integración Continua
+%%La Integración Continua es la forma en la que el equipo de desarrollo de software integra su trabajo parcial o total, en un determinado tiempo establecido por el equipo de trabajo. Requiere de herramientas de automatización que son únicas para todo el equipo de desarrolladores. Estas herramientas ayudan a integrar en forma continua partes de código que son validados por pruebas automáticas, lo cual vuelve más eficiente el trabajo del equipo de desarrollo, ya que permite detectar fallos en etapas tempranas del ciclo de desarrollo.
+%%La Integración continua de cada uno de los integrantes del equipo va a favorecer en los tiempos y calidad del producto.La automatización de la integración continua ayuda a descubrir errores, debido a las continuas pruebas de unidad automatizadas. 
 %% La Integración Continua ayuda a establecer en forma ordenada los avances que pueda tener la iteración de las tareas que se están automatizando. 
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=8cm]{./IMAGENES/proceso_integracion_continua} 
-		\caption{Proceso de Integración Continua}
-	\end{center}
-\end{figure}
 
 
-\item \textbf{Entrega Continua}
-Una vez lograda la integración, se debe continuar con el ciclo para realizar el testing que, si es satisfactorio, permita que la aplicación sea desplegada.
-En esta etapa se implementan todos los cambios en el código y se somete a un proceso de pruebas estandarizado con el fin de generar un producto que pueda ser pasado a producción.
+\item Entrega Continua
+%%Una vez lograda la integración, se debe continuar con el ciclo para realizar el testing que, si es satisfactorio, permita que la aplicación sea desplegada.
+%%En esta etapa se implementan todos los cambios en el código y se somete a un proceso de pruebas estandarizado con el fin de generar un producto que pueda ser pasado a producción.
 %%La entrega continua requiere una aprobación manual. Los periodos de tiempo para lograr entregas continuas depende que la organización cuente con el equipo de desarrollo y operaciones adecuado. De esta manera se pueden presentar versiones candidatas en tiempos mínimos. 
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=7cm]{./IMAGENES/proceso_entrega_continua} 
-		\caption{Proceso de Entrega Continua}
-	\end{center}
-\end{figure}
 
 
-\item \textbf{Despliegue Continuo}
-El despliegue continuo es una práctica que permite llevar los resultados de un proceso de desarrollo a un entorno similar al de producción donde las pruebas funcionales puedan darse a escala completa. El objetivo es detectar problemas en producción lo más rápido posible.
+\item Despliegue Continuo
+%%El despliegue continuo es una práctica que permite llevar los resultados de un proceso de desarrollo a un entorno similar al de producción donde las pruebas funcionales puedan darse a escala completa. El objetivo es detectar problemas en producción lo más rápido posible.
 %% Es el momento temprano en que el usuario interactúa con la aplicación, revisa sus requerimientos y se puede volver atrás en el desarrollo.
 %%El Despliegue Continuo exige una configuración del ambiente de trabajo, que permita un funcionamiento efectivo de las versiones candidatas por parte de los usuarios. Se empieza con una pre-configuración durante todo el proceso de desarrollo y una configuración final antes que se termine la versión candidata.
 %%La entrega continua requiere de una aprobación manual previo a su paso a producción; en el despliegue continuo el paso a producción se realiza de forma automática cuando se han satisfecho todos los criterios definidos.
 %%El Despliegue Continuo visualiza tempranamente los fallos que puedan existir en la aplicación.
 %%Realizando Despliegues Continuos, se logra entregar productos al usuario que pueden ser diarios o semanales, y así analizar fallos que van a ser detectados en forma temprana, debido al poco código que hay que revisar.
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=8.5cm]{./IMAGENES/proceso_despliegue_continuo} 
-		\caption{Proceso de Despliegue Continuo}
-	\end{center}
-\end{figure}
 
 
 \end{itemize}
@@ -165,43 +147,43 @@ ocasiones prescindir de ellos dado que el volumen de negocio no lo requiere. Un 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=11cm]{./IMAGENES/aplicacion_devops} 
-		\caption{Ciclo de Vida del DevOps}
+		\caption{Ámbito de aplicación de DevOps}
 	\end{center}
 \end{figure}
 
 
 \subsubsection{\textbf{Ciclo de Vida y Herramientas de DevOps}}
 Una cadena de herramientas es un conjunto de herramientas de programación que se pueden utilizar para llevar a cabo una tarea compleja de desarrollo de software o para crear un producto de software, que comúnmente es algún otro programa informático o un conjunto de programas relacionados. En el campo DevOps, son recursos útiles en la entrega, desarrollo y administración de aplicaciones durante el ciclo de vida de desarrollo de software, según lo coordinado mediante el uso de una organización que utiliza las prácticas DevOps.\cite{Perez2018} 
-El ciclo de vida de DevOps consta de las siguientes etapas: Planificar, Crear, Verificar, empaquetar, liberar, configurar y monitorear. \cite{Platzi2019}   
+El ciclo de vida de DevOps consta de las siguientes etapas: \cite{Platzi2019}   
 \begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=8.5cm]{./IMAGENES/ciclo_devops} 
+		\includegraphics[width=8cm]{./IMAGENES/ciclo_devops} 
 		\caption{Ciclo de Vida de DevOps}
 	\end{center}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Plan}
+\item \textbf{Plan:}
 Sin importar la metodología que uses como Waterfall o Agile, en esta primera etapa definimos las labores del equipo, los requerimientos necesarios a implementar en la plataforma o producto.
 Podemos hacer usos de herramientas como issues para hacer un monitoreo de nuestro progreso, así como boards como Trello o Asana.
 
-\item \textbf{Create}
+\item \textbf{Create:}
 Empezamos a escribir el código que necesitamos para resolver los problemas que planteamos en el paso anterior.
 Todo este código puede estar almacenado en un solo lugar como un repositorio de Github o Gitlab para hacer uso de herramientas proporcionadas por estas páginas y por git en general como branchs, tags y mucho más.
 
-\item \textbf{Verify}
+\item \textbf{Verify:}
 Como somos desarrolladores increíbles, hemos escritos diferentes pruebas de software para disminuir la cantidad de bugs que podemos agregar a nuestro producto una vez estemos en producción, también es una manera de descubrir errores. Estas pruebas son definidas con antelación.
 Se pueden usar varias herramientas de Continuous Integration como TravisCI, CircleCI o Jenkins
 
-\item \textbf{Package}
+\item \textbf{Package:}
 Empaquetamos nuestro código para correr en una infraestructura determinada. Esto puede hacerse incluso desde la etapa de creación donde escribimos nuestro código de una forma empaquetada y lista para que sea llevada a producción para no tener complicaciones y dolores de cabeza en el futuro.
 Es muy común realizarlo en contenedores de Docker.
 
-\item \textbf{Release}
+\item \textbf{Release:}
 Automatizamos el proceso de enviar el código a producción, liberar una nueva versión de nuestro producto cada que construyamos un feature nuevo o resolvamos un bug mientras haya pasado por las etapas anteriores.
 No es más que una nueva versión de nuestro código disponible para hacerlo de manera manual o automática.
 
-\item \textbf{Monitor}
+\item \textbf{Monitor:}
 Necesitamos revisar las métricas necesarias de cómo nuestro código está funcionando, qué tipo de performance ocurre en los dispositivos de nuestros clientes para tratar de optimizar siempre que sea posible y mejorar nuestro producto.
 Al ser un modelo iterativo es importante estar siempre en este constante proceso, no podemos dar nunca por terminado nuestro producto, esa es la manera en la que las empresas mueren.
 
@@ -220,7 +202,7 @@ Los cambios en la base de datos son a menudo una fuente importante de riesgo y r
 
 \subsubsection{\textbf{Incluyendo la base de datos en DevOps}}
 
-DevOps se trata de cambiar la cultura del desarrollo de software y mejorar la colaboración entre los equipos de desarrollo y operaciones. Pero también se trata de automatizar muchos de los trabajos comunes en la entrega de software, como el control de origen, las pruebas, el cumplimiento y las comprobaciones de seguridad y las implementaciones. Con la automatización establecida, se establece un proceso que ahora es común en el desarrollo de aplicaciones: el desarrollo progresa desde el control de origen a través de la integración continua hasta la gestión de versiones antes de que se implementen los cambios. En cada etapa, los cambios se verifican y prueban para que los errores se recojan antes en el ciclo y las versiones de software sean más rápidas y confiables. Sin embargo, las bases de datos son más problemáticas porque los datos críticos del negocio deben preservarse de manera segura y correcta. Además de esto, existen desafíos específicos en los servicios financieros, como sistemas extremadamente complejos, bases de datos heredadas y departamentos aislados. Sin embargo, ahora se han introducido herramientas y procesos que permiten que las bases de datos se desarrollen junto con las aplicaciones al conectarse e integrarse con los sistemas y la infraestructura ya existentes: \cite{DevopsBD2}
+DevOps se trata de cambiar la cultura del desarrollo de software y mejorar la colaboración entre los equipos de desarrollo y operaciones. Pero también se trata de automatizar muchos de los trabajos comunes en la entrega de software, como el control de origen, las pruebas, el cumplimiento y las comprobaciones de seguridad y las implementaciones. Con la automatización establecida, se establece un proceso que ahora es común en el desarrollo de aplicaciones: el desarrollo progresa desde el control de origen a través de la integración continua hasta la gestión de versiones antes de que se implementen los cambios. En cada etapa, los cambios se verifican y prueban para que los errores se recojan antes en el ciclo y las versiones de software sean más rápidas y confiables. Sin embargo, las bases de datos son más problemáticas porque los datos críticos del negocio deben preservarse de manera segura y correcta. Además de esto, existen desafíos específicos en los servicios financieros, como sistemas extremadamente complejos, bases de datos heredadas y departamentos aislados. Sin embargo, ahora se han introducido herramientas y procesos que permiten que las bases de datos se desarrollen junto con las aplicaciones al conectarse e integrarse con los sistemas y la infraestructura ya existentes: \cite{DevopsBD2} \\
 
 \begin{figure}[htb]
 	\begin{center}
@@ -229,19 +211,20 @@ DevOps se trata de cambiar la cultura del desarrollo de software y mejorar la co
 	\end{center}
 \end{figure}
 
-Como se puede ver, en lugar de que el desarrollo de la base de datos esté separado del de la aplicación y sea administrado al final por un equipo aislado, se convierte en una parte integral y natural de todo el proceso de desarrollo. Esta es una ventaja real para las empresas e instituciones donde, por lo general, la base de datos ha sido un cuello de botella. Debido a que la aplicación y la base de datos se desarrollan y prueban juntas, los errores o problemas potenciales se resaltan mucho antes en el proceso de desarrollo, evitando problemas cuando se implementan cambios. Compare esto con las conversaciones que he tenido con muchos DBA que deben revisar miles de líneas de script cuando se trata de implementar cambios en la base de datos. Eso puede llevar días, dependiendo de cuántos errores encuentren en el script. Al enviar cambios de la base de datos al control de origen de manera regular, puede introducir compilaciones y pruebas automatizadas para asegurarse de que todas esas pequeñas unidades de cambio se prueben y validen varias veces antes de que esté listo para implementar en su próximo entorno. Esto hace que las versiones sean más confiables y consuman menos tiempo, y también significa que puede responder a los cambios mucho más rápido. \cite{DevopsBD2}
+Como se puede ver, en lugar de que el desarrollo de la base de datos esté separado del de la aplicación y sea administrado al final por un equipo aislado, se convierte en una parte integral y natural de todo el proceso de desarrollo. Esta es una ventaja real para las empresas e instituciones donde, por lo general, la base de datos ha sido un cuello de botella. Debido a que la aplicación y la base de datos se desarrollan y prueban juntas, los errores o problemas potenciales se resaltan mucho antes en el proceso de desarrollo, evitando problemas cuando se implementan cambios. Compare esto con las conversaciones que he tenido con muchos DBA que deben revisar miles de líneas de script cuando se trata de implementar cambios en la base de datos. Eso puede llevar días, dependiendo de cuántos errores encuentren en el script. Al enviar cambios de la base de datos al control de origen de manera regular, puede introducir compilaciones y pruebas automatizadas para asegurarse de que todas esas pequeñas unidades de cambio se prueben y validen varias veces antes de que esté listo para implementar en su próximo entorno. Esto hace que las versiones sean más confiables y consuman menos tiempo, y también significa que puede responder a los cambios mucho más rápido. \cite{DevopsBD2}\\
 
 %% TERCERA SUBSECCION
 \subsection{\textbf{Inclusión de la base de datos en la canalización de implementación con la de las aplicaciones}}
 
 \subsubsection{\textbf{Deployment pipeline}}
 
-Tanto las bases de datos y las aplicaciones deberían compartir un solo ciclo de vida de desarrollo; coexistir en la misma tubería de implementación. Existe una situación por la cual esto no se aplica en la mayoría de los casos ya que revertir una base de datos es más riesgoso que revertir una aplicación. Al no incluir la base de datos en la tubería, la mayor parte del trabajo relacionado con los cambios en la base de datos termina siendo manual, con los costos y riesgos asociados. Además de eso esto : 
+Tanto las bases de datos y las aplicaciones deberían compartir un solo ciclo de vida de desarrollo; coexistir en la misma tubería de implementación. Existe una situación por la cual esto no se aplica en la mayoría de los casos ya que revertir una base de datos es más riesgoso que revertir una aplicación.\\ \\ 
+Al no incluir la base de datos en la tubería, la mayor parte del trabajo relacionado con los cambios en la base de datos termina siendo manual, con los costos y riesgos asociados. Además de eso esto :
 \begin{itemize}
 
-\item Resulta en una falta de trazabilidad de los cambios en la base de datos
+\item  Resulta en una falta de trazabilidad de los cambios en la base de datos
 \item Evita aplicar las buenas prácticas de Integración Continua (CI) y Entrega Continua (CD) en toda su extensión
-\item Promueve el miedo a los cambios.\cite{CI/CD} 
+\item Promueve el miedo a los cambios.  \cite{CI/CD}
 
 \end{itemize}
 \subsubsection{\textbf{Fuente de Control}}
@@ -252,7 +235,7 @@ El control de origen es la primera etapa de la canalización de implementación 
 \item Trazabilidad a través del historial de cambios
 \item SQL como documentación
 \item Código compartido y proceso compartido
-\item Estándares exigibles para reducir conflictos 
+\item Estándares exigibles para reducir conflictos
 
 \end{itemize}
 
@@ -266,7 +249,7 @@ Esto es cuando los cambios en la base de datos se integran y validan mediante pr
 \begin{itemize}
 \item ¿Qué se debe probar? (unidad, integración)
 \item ¿Cuándo deberían ser probados? (antes, durante y después de la implementación)
-\item Una vez más, al usar lotes pequeños, el riesgo asociado con los cambios se reduce considerablemente. 
+\item Una vez más, al usar lotes pequeños, el riesgo asociado con los cambios se reduce considerablemente.
 \end{itemize}
 
 
@@ -276,7 +259,7 @@ Esta etapa se enfoca en entregar cambios en la base de datos en el entorno de de
 \begin{itemize}
 \item Tiempo de inactividad de implementación
 \item Hora de recuperarse
-\item Aplicaciones afectadas \cite{CI/CD} 
+\item Aplicaciones afectadas \cite{CI/CD}
 \end{itemize}
 %% ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -284,6 +267,15 @@ Esta etapa se enfoca en entregar cambios en la base de datos en el entorno de de
 %% ANÁLISIS ( APLICACIÓN ) ---------------------------------------------------------------------------------------------------
 
 \section{Análisis}
+
+\subsection{\textbf{DevOps para lograr innovación}}
+La tecnología por sí sola no ofrece una ventaja competitiva. Sin embargo, la entrega de innovación basada en tecnología puede hacer que una organización se diferencie positivamente del resto.
+La innovación implica desarrollar continuamente nuevas ideas para innovar el software, lo que a su vez mejora continuamente el valor que se entrega a los usuarios. DevOps consiste en una colaboración máxima entre todos los participantes: no sólo entre desarrollo y operaciones sino también en todas las líneas de negocios, los proveedores de software y los propios consumidores. DevOps ofrece una ventaja competitiva debido a que permite:
+\begin{itemize}
+\item Acelerar la innovación continua de ideas habilitando la colaboración en el desarrollo y las pruebas en toda la cadena de valor.
+\item Brindar una entrega continua de estas innovaciones automatizando los procesos de entrega del software y eliminando los desperdicios, siempre en conformidad con los requisitos regulatorios
+\item Brindar un ciclo de retroalimentación para el aprendizaje continuo sobre los clientes, monitoreando y optimizando la innovación impulsada por software.
+\end{itemize}
 
 \subsection{\textbf{El manejo de versiones una ayuda para el DBA}}
 La automatización le hace la vida más fácil al DBA ya que cada vez que alguien realice una modificación el poder ver quien lo hizo, como lo hizo, porque lo hizo y con ello podrá gestionar de manera ágil la base de datos. Tomando en cuenta el manejo de versiones pasarían a ser de ayuda para el DBA tornándose confiables, y volátiles al cambio, siendo mucho más rápido que el estar conversando e indagando con los desarrolladores por el cambio realizado.
@@ -299,13 +291,12 @@ DevOps es un modelo de trabajo para realizar entregas seguras que nos darán la 
 
 \begin{itemize}
 
-\item Conclusion 1 : \\
-En conclusión, DevOps es una metodología para crear software, una cultura de trabajo para realizar una colaboración eficaz entre los desarrolladores de Software y administradores de sistemas, también nos permite fabricar software rápidamente, con mayor calidad, menor costo y una frecuencia máxima de versiones. DevOps también se apoya en la metodología ágil ya que apoya la ideología de entrega continua y automatización, pruebas e integración automatizadas continuas, despliegue continuo y monitoreo continuo.
+\item Conclusion 1 : \\ Los enfoques tradicionales para el desarrollo y la entrega de software ya no son suficientes. Los procesos manuales inducen a error,
+se cortan y crean desperdicios y demoras en la respuesta. Las organizaciones no pueden darse el lujo de priorizar el costo descuidando la velocidad de la entrega, ni tampoco elegir la velocidad en lugar de gestionar el riesgo. Un enfoque DevOps ofrece una poderosa solución para estos desafíos. 
 
-\item Conclusion 2 : \\ 
-Aplicar DevOps en el proceso de creación de una base de datos es valioso en términos de integración continua y entrega continúa y para que esto se realice de manera satisfactoria es necesario consultar a los administradores de base de datos ante cualquier cambio que quiera realizarse en la estructura o diseño de una base de datos de parte de los desarrolladores ya que los DBA tienen otras tareas como la optimización de los scripts.
+\item Conclusion 2 : \\ DevOps es una metodología para crear software, una cultura de trabajo para realizar una colaboración eficaz entre los desarrolladores de Software y administradores de sistemas, también nos permite fabricar software rápidamente, con mayor calidad, menor costo y una frecuencia máxima de versiones. DevOps se apoya en la metodología ágil ya que apoya la ideología de entrega continua y automatización, pruebas e integración automatizadas continuas, despliegue continuo y monitoreo continuo.
 
-\item Conclusion 3 : \\ C
+\item Conclusion 3 : \\ Aplicar DevOps en el proceso de creación de una base de datos es valioso en términos de integración continua y entrega continúa y para que esto se realice de manera satisfactoria es necesario consultar a los administradores de base de datos ante cualquier cambio que quiera realizarse en la estructura o diseño de una base de datos de parte de los desarrolladores ya que los DBA tienen otras tareas como la optimización de los scripts.
 
 \end{itemize}
 
